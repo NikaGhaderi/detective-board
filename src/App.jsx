@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import AddClueForm from './components/AddClueForm'
+import DetectiveBoard from './components/DetectiveBoard'
 import './App.css'
 
 function App() {
   const [clues, setClues] = useState([
-    { id: 1, title: "Sample Clue", category: "Evidence", description: "Initial setup" }
+    { id: 1, title: "Sample Clue", category: "Evidence", description: "Initial setup" },
+    { id: 2, title: "Mr. Green", category: "Suspects", description: "No alibi for 9PM" } // Added another dummy data for testing
   ]);
 
   const handleAddClue = (newClue) => {
@@ -19,10 +21,9 @@ function App() {
       <div className="ui-section" style={{marginBottom: '30px'}}>
         <AddClueForm onAddClue={handleAddClue} />
       </div>
-
-      {/* Person B will work here */}
-      <div className="board-section" style={{border: '1px dashed blue'}}>
-        <p>DetectiveBoard Placeholder</p>
+      
+      <div className="board-section">
+        <DetectiveBoard clues={clues} />
       </div>
     </div>
   )
