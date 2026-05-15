@@ -1,5 +1,9 @@
 .app-container {
+<<<<<<< feature-ui
+  background-color: darkblue;
+=======
   background-color: lightblue;
+>>>>>>> dev
 }
 
 .counter {

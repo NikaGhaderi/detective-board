@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import Header from './components/Header'
+import AddClueForm from './components/AddClueForm'
 import DetectiveBoard from './components/DetectiveBoard'
 import './App.css'
 
@@ -14,16 +16,16 @@ function App() {
 
   return (
     <div className="app-container" style={{ padding: '20px' }}>
-      <h1>Detective Case Board</h1>
+      <Header />
       
-      {/* Person A will work here */}
       <div className="ui-section" style={{marginBottom: '30px'}}>
-        <p style={{color: 'gray'}}>AddClueForm Placeholder</p>
+        <AddClueForm onAddClue={handleAddClue} />
       </div>
-      
+
       {/* Person B's work rendered here */}
       <div className="board-section">
         <DetectiveBoard clues={clues} />
+
       </div>
     </div>
   )
