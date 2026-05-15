@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import Header from './components/Header'
+import AddClueForm from './components/AddClueForm'
 import './App.css'
 
 function App() {
@@ -11,13 +13,13 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <h1>Detective Case Board</h1>
-      {/* Person A will work here */}
-      <div className="ui-section" style={{border: '1px dashed gray'}}>
-        <p>AddClueForm Placeholder</p>
-      </div>
+    <div className="app-container" style={{ padding: '20px' }}>
+      <Header />
       
+      <div className="ui-section" style={{marginBottom: '30px'}}>
+        <AddClueForm onAddClue={handleAddClue} />
+      </div>
+
       {/* Person B will work here */}
       <div className="board-section" style={{border: '1px dashed blue'}}>
         <p>DetectiveBoard Placeholder</p>
