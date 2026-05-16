@@ -67,3 +67,8 @@ The repository captures a highly granular tracking timeline. Below is the techni
 #### 🛑 Conflict 2: Shared Local Tracking Intersection
 * **Source Vector:** Both engineers executed modifications to line 1 of the root tracking report `README.md` inside their independent workstation checkouts before drawing changes down from the upstream server.
 * **Resolution Engine:** Terminal push protocols were blocked by the index tree. Execution of a forced pulling string (`git pull origin dev`) exposed raw physical merge syntax markers locally. The diverging string statements were unified within the CLI text editor environment to preserve unified documentation formatting before staging and running a secure baseline override commit.
+
+#### 🛑 Conflict 3: Shared Local Tracking Intersection (Header)
+* **Source Vector:** Concurrent modifications were made to src/components/Header.jsx on the shared dev tracking branch before local workspaces were synchronized with the remote repository upstream.
+
+* **Resolution Engine:** The terminal push string was rejected due to a non-fast-forward state. Running git pull origin dev generated local content conflict markers inside the header file. The layout styling and the newly implemented theme toggle mechanics were manually unified, staged via git add, and finalized with a local tracking merge commit.
