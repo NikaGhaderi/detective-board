@@ -11,7 +11,7 @@ This section details the technical structural implementation, branching topologi
 
 ### 1. Repository Architecture & Initialization
 * **Local Initialization:** The project repository structure was established locally using `git init`. A modern single-page application (SPA) architecture was generated utilizing Vite's React-JavaScript template.
-* **Remote Synchronization:** A clean remote repository was established on Github without auto-generated default assets to eliminate upstream divergence risks. The local `master` pointer was renamed globally using `git branch -M main` and coupled to the remote architecture via:
+* **Remote Synchronization:** A clean remote repository was established on GitHub without auto-generated default assets to eliminate upstream divergence risks. The local `master` pointer was renamed globally using `git branch -M main` and coupled to the remote architecture via:
     `git remote add origin https://github.com/NikaGhaderi/detective-board.git`
 * **Branch Protection Rule:** Strict enforcement settings were compiled on the `main` branch. Direct pushes were blocked globally, mandating audited Pull Requests and explicit branch integration workflows for all code modifications.
 
