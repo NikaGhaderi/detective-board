@@ -12,7 +12,8 @@ function App() {
   ]);
 
   useEffect(() => {
-    document.body.className = theme;
+    document.body.classList.remove('dark', 'light');
+    document.body.classList.add(theme);
   }, [theme]);
 
   const handleToggleTheme = () => {
