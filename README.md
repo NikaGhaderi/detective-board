@@ -31,31 +31,33 @@ The system was engineered across 5 decoupled tracking timelines to isolate funct
 
 The repository captures a highly granular tracking timeline. Below is the technical log mapping our development lifecycle:
 
-| Sequence | Branch | Author | Commit Message (Standard Conventional Commits) | Target Scope / File Impact |
+| Sequence | Branch | Commit Message (Standard Conventional Commits) | Target Scope / File Impact |
 | :--- | :--- | :--- | :--- | :--- |
-| **C1** | `main` | Nika | `Initial commit: Setup React Vite project` | Project scaffolding configuration |
-| **C2** | `main` | Nika | `docs: Add OS-specific and report exclusions to .gitignore` | `.gitignore` tracking filters |
-| **C3** | `dev` | Nika | `chore: Define project structure and global state contract` | `src/App.jsx` skeleton setup |
-| **C4** | `dev` | Nika | `refactor: Move project files to root for easier deployment` | Repository structural alignment |
-| **C5** | `feature-board` | Lia| `feat: Implement ClueCard component for individual items` | `src/components/ClueCard.jsx` |
-| **C6** | `feature-board` | Lia| `feat: Create CategoryColumn to map and render ClueCards` | `src/components/CategoryColumn.jsx` |
-| **C7** | `feature-board` | Lia| `feat: Implement DetectiveBoard logic to filter clues by category` | `src/components/DetectiveBoard.jsx` |
-| **C8** | `feature-board` | Lia| `integrate: Connect DetectiveBoard to main App state` | `src/App.jsx` layout updates |
-| **C9** | `feature-board` | Lia| `chore: verify board layout and component integration` | Structural validation pass |
-| **C10** | `feature-board` | Lia| `style: set board background color to lightblue` | `src/App.css` color mapping |
-| **C11** | `feature-ui` | Nika | `feat: Implement Header component for app title` | `src/components/Header.jsx` |
-| **C12** | `feature-ui` | Nika | `feat: Implement AddClueForm logic and UI` | `src/components/AddClueForm.jsx` |
-| **C13** | `feature-ui` | Nika | `integrate: Connect Header and AddClueForm to App state` | `src/App.jsx` entry wiring |
-| **C14** | `feature-ui` | Nika | `style: Set background color to darkblue` | `src/App.css` (Targeted conflict vector) |
-| **C15** | `dev` (PR #2) | Lia| `Merge pull request #2 from feature-board into dev` | Initial baseline remote integration |
-| **C16** | `dev` (PR) | Nika | `Merge pull request #3 from feature-ui into dev` | **[Conflict 1 Resolved]** Integrated grid system |
-| **C17** | `dev` | Nika | `docs: Update README title for branding` | `README.md` title divergence step |
-| **C18** | `dev` | Lia| `docs: Set versioning title in README` | `README.md` (Targeted conflict vector) |
-| **C19** | `dev` | Lia| `Merge: Resolve local README title conflict` | **[Conflict 2 Resolved]** Unified documentation |
-| **C20** | `hotfix-...` | Lia| `hotfix: correct critical styling issue` | Emergency adjustments on production trunk |
-| **C21** | `main` (PR) | Lia| `Merge pull request #4 from hotfix-styling into main` | Production live patch validation |
-| **C22** | `dev` | Nika | `ci: Add GitHuLiaActions workflow for static deployment` | `.github/workflows/deploy.yml` compilation |
-
+| **C1** | `main` | `Initial commit: Setup React Vite project` | Project scaffolding configuration |
+| **C2** | `main` | `docs: Add OS-specific and report exclusions to .gitignore` | `.gitignore` tracking filters |
+| **C3** | `dev` | `chore: Define project structure and global state contract` | `src/App.jsx` skeleton setup |
+| **C4** | `dev` | `refactor: Move project files to root for easier deployment` | Repository structural alignment |
+| **C5** | `feature-board` | `feat: Implement ClueCard component for individual items` | `src/components/ClueCard.jsx` |
+| **C6** | `feature-board` | `feat: Create CategoryColumn to map and render ClueCards` | `src/components/CategoryColumn.jsx` |
+| **C7** | `feature-board` | `feat: Implement DetectiveBoard logic to filter clues by category` | `src/components/DetectiveBoard.jsx` |
+| **C8** | `feature-board` | `integrate: Connect DetectiveBoard to main App state` | `src/App.jsx` layout updates |
+| **C9** | `feature-board` | `chore: verify board layout and component integration` | Structural validation pass |
+| **C10** | `feature-board` | `style: set board background color to lightblue` | `src/App.css` color mapping |
+| **C11** | `feature-ui` | `feat: Implement Header component for app title` | `src/components/Header.jsx` |
+| **C12** | `feature-ui` | `feat: Implement AddClueForm logic and UI` | `src/components/AddClueForm.jsx` |
+| **C13** | `feature-ui` | `integrate: Connect Header and AddClueForm to App state` | `src/App.jsx` entry wiring |
+| **C14** | `feature-ui` | `style: Set background color to darkblue` | `src/App.css` (Targeted conflict vector) |
+| **C15** | `dev` (PR #2) | `Merge pull request #2 from feature-board into dev` | Initial baseline remote integration |
+| **C16** | `dev` (PR) | `Merge pull request #3 from feature-ui into dev` | **[Conflict 1 Resolved]** Integrated grid system |
+| **C17** | `dev` | `docs: Update README title for branding` | `README.md` title divergence step |
+| **C18** | `dev` | `docs: Set versioning title in README` | `README.md` (Targeted conflict vector) |
+| **C19** | `dev` | `Merge: Resolve local README title conflict` | **[Conflict 2 Resolved]** Unified documentation |
+| **C20** | `hotfix-...` | `hotfix: correct critical styling issue` | Emergency adjustments on production trunk |
+| **C21** | `main` (PR) | `Merge pull request #4 from hotfix-styling into main` | Production live patch validation |
+| **C22** | `dev` | `ci: Add GitHub Actions workflow for static deployment` | `.github/workflows/deploy.yml` compilation |
+| **C23** | `dev` | `style: finalize cyberpunk noir theme and interactive state physics` | Enhanced component palette (`index.css`/`App.css`) |
+| **C24** | `dev` | `Merge: Resolve local Header conflict on dev branch` | **[Conflict 3 Resolved]** Merged simultaneous header changes |
+| **C25** | `dev` | `docs: Document third resolved conflict in Header component` | Added technical logs to `README.md` |
 ---
 
 ### 4. Technical Breakdown of Resolved Conflicts
