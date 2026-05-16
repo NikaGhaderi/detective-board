@@ -1,11 +1,5 @@
-<<<<<<< HEAD
 # Lab Report: Static Frontend with Automated Deployment
 **Team Members:** Ali M. Shabestari and Nika Ghaderi
-=======
-# React + Vite (DetectiveBoard Project)
-
-# Case Files: Ultra Secret
->>>>>>> c45af89ad137e916cb0b6d71d69b98c58194caba
 
 ## Live Application URL
 🔗 [Active Case Files Dashboard](https://nikaghaderi.github.io/detective-board/)
