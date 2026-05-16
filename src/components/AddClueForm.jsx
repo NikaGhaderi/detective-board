@@ -24,7 +24,15 @@ export default function AddClueForm({ onAddClue }) {
         <option value="Leads">Leads</option>
       </select>
       <textarea placeholder="Description..." value={description} onChange={e => setDescription(e.target.value)} required style={{ padding: '8px', minHeight: '60px' }} />
-      <button type="submit" style={{ padding: '10px', backgroundColor: '#0056b3', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>Add to Board</button>
+      <button type="submit" style={{ 
+        padding: '12px', 
+        backgroundColor: 'var(--accent)',
+        color: 'white', 
+        border: 'none', 
+        borderRadius: '6px', 
+        fontWeight: '600',
+        cursor: 'pointer' 
+      }}>Add to Board</button>
     </form>
   );
 }
