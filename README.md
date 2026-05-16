@@ -32,7 +32,7 @@ The system was engineered across 5 decoupled tracking timelines to isolate funct
 The repository captures a highly granular tracking timeline. Below is the technical log mapping our development lifecycle:
 
 | Sequence | Branch | Commit Message (Standard Conventional Commits) | Target Scope / File Impact |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |
 | **C1** | `main` | `Initial commit: Setup React Vite project` | Project scaffolding configuration |
 | **C2** | `main` | `docs: Add OS-specific and report exclusions to .gitignore` | `.gitignore` tracking filters |
 | **C3** | `dev` | `chore: Define project structure and global state contract` | `src/App.jsx` skeleton setup |
@@ -55,7 +55,7 @@ The repository captures a highly granular tracking timeline. Below is the techni
 | **C20** | `hotfix-...` | `hotfix: correct critical styling issue` | Emergency adjustments on production trunk |
 | **C21** | `main` (PR) | `Merge pull request #4 from hotfix-styling into main` | Production live patch validation |
 | **C22** | `dev` | `ci: Add GitHub Actions workflow for static deployment` | `.github/workflows/deploy.yml` compilation |
-| **C23** | `dev` | `style: finalize cyberpunk noir theme and interactive state physics` | Enhanced component palette (`index.css`/`App.css`) |
+| **C23** | `dev` | `style: finalize cyberpunk noir theme and interactive state physics` | Enhanced component palette (`index.css`/`App css`) |
 | **C24** | `dev` | `Merge: Resolve local Header conflict on dev branch` | **[Conflict 3 Resolved]** Merged simultaneous header changes |
 | **C25** | `dev` | `docs: Document third resolved conflict in Header component` | Added technical logs to `README.md` |
 ---
