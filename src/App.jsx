@@ -1,26 +1,39 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import Header from './components/Header'
+import AddClueForm from './components/AddClueForm'
+import DetectiveBoard from './components/DetectiveBoard'
 import './App.css'
 
 function App() {
+  const [theme, setTheme] = useState('dark');
   const [clues, setClues] = useState([
-    { id: 1, title: "Sample Clue", category: "Evidence", description: "Initial setup" }
+    { id: 1, title: "Sample Clue", category: "Evidence", description: "Initial setup" },
+    { id: 2, title: "Mr. Green", category: "Suspects", description: "No alibi for 9PM" }
   ]);
 
+  useEffect(() => {
+    document.body.classList.remove('dark', 'light');
+    document.body.classList.add(theme);
+  }, [theme]);
+
+  const handleToggleTheme = () => {
+    setTheme(prevTheme => prevTheme === 'dark' ? 'light' : 'dark');
+  };
+
   const handleAddClue = (newClue) => {
-    setClues([...clues, newClue]);
+    setClues(prevClues => [...prevClues, newClue]);
   };
 
   return (
     <div className="app-container">
-      <h1>Detective Case Board</h1>
-      {/* Person A will work here */}
-      <div className="ui-section" style={{border: '1px dashed gray'}}>
-        <p>AddClueForm Placeholder</p>
-      </div>
+      <Header currentTheme={theme} onToggleTheme={handleToggleTheme} />
       
-      {/* Person B will work here */}
-      <div className="board-section" style={{border: '1px dashed blue'}}>
-        <p>DetectiveBoard Placeholder</p>
+      <div className="ui-section">
+        <AddClueForm onAddClue={handleAddClue} />
+      </div>
+
+      <div className="board-section">
+        <DetectiveBoard clues={clues} />
       </div>
     </div>
   )
