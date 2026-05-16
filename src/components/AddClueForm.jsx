@@ -16,7 +16,7 @@ export default function AddClueForm({ onAddClue }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '20px', backgroundColor: '#f5f5f5', borderRadius: '8px' }}>
+    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '20px', backgroundColor: 'var(--accent-line)', opacity: 0.5 , borderRadius: '8px' }}>
       <input type="text" placeholder="Clue Title" value={title} onChange={e => setTitle(e.target.value)} required style={{ padding: '8px' }} />
       <select value={category} onChange={e => setCategory(e.target.value)} style={{ padding: '8px' }}>
         <option value="Suspects">Suspects</option>

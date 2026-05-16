@@ -5,7 +5,6 @@
   gap: 30px;
 }
 
-/* UI/Form Panel Wrapper */
 .ui-section {
   background-color: var(--code-bg);
   padding: 24px;
@@ -25,7 +24,6 @@
   gap: 16px;
 }
 
-/* Beautiful Interactive Field Formats */
 .ui-section input, 
 .ui-section select, 
 .ui-section textarea {
@@ -64,7 +62,6 @@
   opacity: 0.95;
 }
 
-/* Board Grid Layout Tuning */
 .detective-board {
   display: flex;
   flex-wrap: wrap;
@@ -96,7 +93,6 @@
   border-bottom: 1px solid var(--border);
 }
 
-/* Clue Card Interactive Mechanics */
 .clue-card {
   background-color: var(--card-bg) !important;
   color: var(--text-h) !important;
