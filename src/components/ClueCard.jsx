@@ -1,11 +1,8 @@
 export default function ClueCard({ clue }) {
   return (
-    <div className="clue-card" style={{
-      margin: '10px 0',
-      boxShadow: '2px 2px 5px rgba(0,0,0,0.2)'
-    }}>
-      <h3 style={{ margin: '0 0 8px 0', fontSize: '16px' }}>{clue.title}</h3>
-      <p style={{ margin: 0, fontSize: '14px' }}>{clue.description}</p>
+    <div className="clue-card">
+      <h3>{clue.title}</h3>
+      <p>{clue.description}</p>
     </div>
   );
 }

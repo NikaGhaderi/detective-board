@@ -7,13 +7,7 @@ export default function DetectiveBoard({ clues }) {
   const leads = clues.filter(c => c.category === 'Leads');
 
   return (
-    <div className="detective-board" style={{
-      display: 'flex',
-      flexWrap: 'wrap',
-      gap: '20px',
-      justifyContent: 'center',
-      marginTop: '20px'
-    }}>
+    <div className="detective-board">
       <CategoryColumn title="Suspects" columnClues={suspects} />
       <CategoryColumn title="Evidence" columnClues={evidence} />
       <CategoryColumn title="Leads" columnClues={leads} />

@@ -38,19 +38,19 @@
      GLOBAL APP LAYOUT & INHERITANCE FIX
      ========================================== */
   body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg);
-    color: var(--text);
-    font-family: var(--sans);
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.15px;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg, #090b0e);
+      color: var(--text, #8fa0b4);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.15px;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
   
   #root {
     width: 100%;

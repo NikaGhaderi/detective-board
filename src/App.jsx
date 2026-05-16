@@ -21,7 +21,7 @@ function App() {
   };
 
   const handleAddClue = (newClue) => {
-    setClues([...clues, newClue]);
+    setClues(prevClues => [...prevClues, newClue]);
   };
 
   return (
